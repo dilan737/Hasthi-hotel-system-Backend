@@ -15,6 +15,7 @@ export default function verifyJwt(req, res, next)  {
         })
     }
     //console.log(header); // should log the token from Postman
+    //check code
 
     next();
 }

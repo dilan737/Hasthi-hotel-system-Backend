@@ -1,10 +1,10 @@
 import express from "express"; 
 import bodyParser from "body-parser"
 import mongoose from "mongoose";
-import userRouter from "./routes/userRouter.js";
-import productRouter from "./routes/productRouter.js";
+// import userRouter from "./routes/userRouter.js";
+// import productRouter from "./routes/productRouter.js";
 import verifyJwt from "./middleware/auth.js";
-import orderrouter from "./routes/orderRoutes.js";
+// import orderrouter from "./routes/orderRoutes.js";
 import dotenv from "dotenv"
 dotenv.config()
 
@@ -37,9 +37,9 @@ app.use(verifyJwt);
 
 
 
-app.use("/api/user",userRouter);
-app.use("/api/product",productRouter);
-app.use("/api/order",orderrouter);
+// app.use("/api/user",userRouter);
+// app.use("/api/product",productRouter);
+// app.use("/api/order",orderrouter);
 
 
 
